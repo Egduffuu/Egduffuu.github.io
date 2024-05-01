@@ -11,6 +11,13 @@
             color: #ffffff;
             margin: 0;
             padding: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
         }
         h1 {
             color: #ffa500;
@@ -31,18 +38,20 @@
     </style>
 </head>
 <body>
-    <h1>Hi! Here's Your Exact Location:</h1>
-    <hr>
-    <p><strong>IP Address:</strong> <span id="ip_address"></span></p>
-    <p><strong>Country:</strong> <span id="country_name"></span></p>
-    <p><strong>Region:</strong> <span id="region_name"></span></p>
-    <p><strong>City:</strong> <span id="city_name"></span></p>
-    <p><strong>Latitude:</strong> <span id="latitude"></span></p>
-    <p><strong>Longitude:</strong> <span id="longitude"></span></p>
-    <p><strong>Postal Code:</strong> <span id="postal_code"></span></p>
-    <p><strong>Timezone:</strong> <span id="timezone"></span></p>
-    <p><strong>ISP:</strong> <span id="isp"></span></p>
-    <hr>
+    <div class="container">
+        <h1>Hi! Here's Your Exact Location:</h1>
+        <hr>
+        <p><strong>IP Address:</strong> <span id="ip_address"></span></p>
+        <p><strong>Country:</strong> <span id="country_name"></span></p>
+        <p><strong>Region:</strong> <span id="region_name"></span></p>
+        <p><strong>City:</strong> <span id="city_name"></span></p>
+        <p><strong>Latitude:</strong> <span id="latitude"></span></p>
+        <p><strong>Longitude:</strong> <span id="longitude"></span></p>
+        <p><strong>Postal Code:</strong> <span id="postal_code"></span></p>
+        <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+        <p><strong>ISP:</strong> <span id="isp"></span></p>
+        <hr>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
