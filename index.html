@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Netlog Policy Account Extractor - Egduffuu</title>
+<title>Netlog Policy Account Extractor</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -90,9 +90,10 @@ function hideButton() {
 <body>
 <div class="container">
     <h1>Netlog Policy Account Extractor</h1>
-    <button onclick="deletePrompt()">Find Accounts</button>
+    <button id="mainButton" onclick="deletePrompt()">Find Accounts</button>
     <button id="hideButton" onclick="hideButton()">Hide</button>
     <p class="result" id="result"></p>
+    <a href="otherpranks.html"><button id="otherPranksButton">Go to Other Pranks</button></a>
 </div>
 <div class="footer">
     Made by MatthewWaldman
