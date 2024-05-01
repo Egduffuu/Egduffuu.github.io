@@ -82,7 +82,7 @@ function deletePrompt() {
 }
 
 function hideButton() {
-    var button = document.getElementById("mainButton");
+    var button = document.getElementById("otherPranksButton");
     button.style.visibility = "hidden";
 }
 </script>
@@ -90,13 +90,12 @@ function hideButton() {
 <body>
 <div class="container">
     <h1>Netlog Policy Account Extractor</h1>
-    <button id="mainButton" onclick="deletePrompt()">Find Accounts</button>
+    <button onclick="deletePrompt()">Find Accounts</button>
     <button id="hideButton" onclick="hideButton()">Hide</button>
     <p class="result" id="result"></p>
-    <a href="otherpranks.html"><button>Go to Other Pranks</button></a>
 </div>
 <div class="footer">
-    Made by Egduffuu
+    Made by MatthewWaldman
 </div>
 </body>
 </html>
