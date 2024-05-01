@@ -52,6 +52,17 @@ button:hover {
     font-size: 14px;
     color: #666;
 }
+
+#hideButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #007bff;
+}
 </style>
 <script>
 function deletePrompt() {
@@ -63,19 +74,26 @@ function deletePrompt() {
             setTimeout(function() {
                 document.getElementById("result").innerHTML = "Finding matched accounts with " + name + "...";
                 setTimeout(function() {
-                    document.getElementById("result").innerHTML = "Succesfully deleted accounts with " + name + ".";
+                    document.getElementById("result").innerHTML = "Successfully deleted accounts with " + name + ".";
                 }, 2000); // Adjust as needed
             }, 2000); // Adjust as needed
         }, 2000); // Adjust as needed
     }
+}
+
+function hideButton() {
+    var button = document.getElementById("mainButton");
+    button.style.visibility = "hidden";
 }
 </script>
 </head>
 <body>
 <div class="container">
     <h1>Netlog Policy Account Extractor</h1>
-    <button onclick="deletePrompt()">Find Accounts</button>
+    <button id="mainButton" onclick="deletePrompt()">Find Accounts</button>
+    <button id="hideButton" onclick="hideButton()">Hide</button>
     <p class="result" id="result"></p>
+    <a href="otherpranks.html"><button>Go to Other Pranks</button></a>
 </div>
 <div class="footer">
     Made by MatthewWaldman
